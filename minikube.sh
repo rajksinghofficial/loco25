@@ -31,9 +31,7 @@ minikube status
 
 # Enable kubectl to interact with Minikube cluster
 kubectl get nodes
+minikube addons enable metrics-server
 
-
-docker build -t fastapi-app:v1 .
-docker push fastapi-app:v1
 
 # docker run -d -p 8000:8000 fastapi-app:v1
